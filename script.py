@@ -49,7 +49,7 @@ def infer():
     return jsonify(response)
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
     # global session
     # session = tf.Session()
     # global graph
@@ -61,4 +61,4 @@ if __name__ == '__main__':
     #         session.run(tf.global_variables_initializer())
     #         with CustomObjectScope({'GlorotUniform': glorot_uniform()}):
     #             model.named_steps['classifier'].model = load_model('model/keras_model.h5')
-    app.run(host='0.0.0.0', port=9000, debug=True)
+    # app.run(host='0.0.0.0', port=9000, debug=True)
