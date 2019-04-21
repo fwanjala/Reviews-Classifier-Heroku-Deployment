@@ -47,18 +47,3 @@ def infer():
 @app.route('/')
 def index():
     return "This is just an index page and nothing else!"
-
-
-# if __name__ == '__main__':
-#     # global session
-#     # session = tf.Session()
-#     # global graph
-#     # graph = tf.get_default_graph()
-#     # global model
-#     # model = joblib.load('model/sklearn_pipeline.pkl')
-#     # with graph.as_default():
-#     #     with session.as_default():
-#     #         session.run(tf.global_variables_initializer())
-#     #         with CustomObjectScope({'GlorotUniform': glorot_uniform()}):
-#     #             model.named_steps['classifier'].model = load_model('model/keras_model.h5')
-#     app.run(host='0.0.0.0', port=9000, debug=True)
