@@ -7,3 +7,7 @@ The simple API documentation is available [here](https://github.com/sayakpaul/Re
 ![](https://i.ibb.co/zmV7t7f/Screen-Shot-2019-04-21-at-2-24-41-PM.png)
 
 ![](https://i.ibb.co/QfzWdyB/Screen-Shot-2019-04-21-at-2-24-57-PM.png)
+
+Here's how to test the API endpoint in Postman (it is currently deployed on Heroku): 
+
+![](https://i.ibb.co/xmsZyxC/Screen-Shot-2019-04-21-at-11-54-59-PM.png)
