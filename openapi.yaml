@@ -1,17 +1,28 @@
-openapi: "3.0.0"
+swagger: "2.0"
 
 info:
-  title: "Useless sample api"
-  description: "A simple api that returns a 200 if you ping it."
+  title: "Review classification API"
+  description: "A simple api that predicts if a Zomato review is carrying positive or negative sentiment."
   version: "1.0"
 
 paths:
-  /ping:
-    get:
+  /predict:
+    post:
+      consumes:
+        - application/json
+      parameters: 
+        - in: body
+          name: text
+          description: Review to be classified. 
+          schema:
+            type: "string"
       responses:
         '200':
           description: OK
-          content:
-            text/plain:
-              schema:
-                type: string
+          schema: 
+            type: "string"
+          examples:
+            Sentiment:
+              Sentiment:
+                'positive'
+            
