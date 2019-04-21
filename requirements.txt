@@ -76,7 +76,6 @@ PyYAML==5.1
 pyzmq==18.0.1
 qtconsole==4.4.3
 requests==2.21.0
-ruamel-yaml==0.15.46
 ruamel.yaml==0.15.92
 scikit-learn==0.20.3
 scipy==1.1.0
