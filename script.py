@@ -48,6 +48,10 @@ def infer():
     response = {'Sentiment': pred}
     return jsonify(response)
 
+@app.route('/')
+def index():
+    return "This is just an index page and nothing else!"
+
 
 # if __name__ == '__main__':
     # global session
