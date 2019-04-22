@@ -10,11 +10,8 @@ from string import digits
 
 app = Flask(__name__)
 
-global session
 session = tf.Session()
-global graph
 graph = tf.get_default_graph()
-global model
 model = joblib.load('model/sklearn_pipeline.pkl')
 with graph.as_default():
     with session.as_default():
@@ -30,9 +27,6 @@ def remove_digits(s):
 
 @app.route('/predict', methods=['POST'])
 def infer():
-    global model
-    global session
-    global graph
     text = request.json['text']
     text = remove_digits(text)
     with graph.as_default():
