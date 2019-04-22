@@ -1,6 +1,5 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e722d2a5a0e342958627d8bcf76477f7)](https://app.codacy.com/app/sayakpaul/Reviews-Classifier-Heroku-Deployment?utm_source=github.com&utm_medium=referral&utm_content=sayakpaul/Reviews-Classifier-Heroku-Deployment&utm_campaign=Badge_Grade_Dashboard)
-
 I attended the live streams of [Kaggle CareerCon 2019](https://www.kaggle.com/careercon2019). [Rachael Tatman](https://twitter.com/rctatman) of Kaggle took sessions of wrapping machine learning models into REST API endpoints and then deploying them on Heroku and GCP's AppEngine. 
 
 I wanted to try the deployment part as I am aware of how to wrap a machine learning model as a REST API endpoint. Decided to start with something a bit complicated intentionally but the end result was very satisfactory to me. I used the Zomato reviews' data from [this repository](https://github.com/Nilabhra/kolkata_nlp_workshop_2019) and built a sentiment classifier out of it using TF 2.0. I then built a `sklearn` pipeline including the `tf-keras` model (had to wrap it in a `sklearn` compatible model class) and a `CountVectorizer`. 
